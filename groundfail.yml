@@ -1,0 +1,30 @@
+#execute
+#export COIN_INSTALL_DIR=/Users/USERNAME/CONDA_DIR/envs/groundfail
+#eg export COIN_INSTALL_DIR=/Users/scollis/anaconda3/envs/groundfail
+name: groundfail
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6
+  - cython
+  - numpy
+  - scipy
+  - matplotlib
+  - jupyter
+  - xarray
+  - netcdf4
+  - nose
+  - basemap
+  - trmm_rsl
+  - wradlib
+  - cartopy
+  - siphon
+  - metpy
+  - boto3
+  - coincbc=2.9.9
+  - pip:
+     - fastkml
+     - git+https://github.com/jjhelmus/CyLP.git@py3
+     - git+https://github.com/ARM-DOE/pyart
+     - git+https://github.com/CSU-Radarmet/CSU_RadarTools.git
